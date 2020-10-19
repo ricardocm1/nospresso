@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QrW-kO-zon">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-LightItalic.ttf">
+            <string>OpenSans-LightItalic</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu Produtos View Controller-->
+        <scene sceneID="PU9-LT-ZeN">
+            <objects>
+                <viewController id="dgV-OA-Od3" customClass="MenuProdutosViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="myV-lL-9Kk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-cX-Ser">
+                                <rect key="frame" x="0.0" y="44" width="414" height="256.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="O8i-eu-oEl">
+                                        <rect key="frame" x="278" y="70" width="136" height="136"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FrF-e0-KjI">
+                                        <rect key="frame" x="28" y="180.5" width="184" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafés" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-VV-is9">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cremosos, espumosos, hmm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoM-aY-n7W">
+                                                <rect key="frame" x="0.0" y="34.5" width="184" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Cafes"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="O8i-eu-oEl" secondAttribute="trailing" id="8WH-Kv-2nc"/>
+                                    <constraint firstItem="O8i-eu-oEl" firstAttribute="centerY" secondItem="kOq-cX-Ser" secondAttribute="centerY" constant="10" id="WXI-lG-arb"/>
+                                    <constraint firstAttribute="bottom" secondItem="FrF-e0-KjI" secondAttribute="bottom" constant="25" id="kyx-Vt-c88"/>
+                                    <constraint firstItem="FrF-e0-KjI" firstAttribute="leading" secondItem="kOq-cX-Ser" secondAttribute="leading" constant="28" id="upJ-Gd-HdF"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oYl-mo-5mx" appends="YES" id="SRG-kg-jvB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pri-BQ-r3V">
+                                <rect key="frame" x="0.0" y="300.5" width="414" height="256"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="3v7-ts-cLV">
+                                        <rect key="frame" x="294" y="65" width="120" height="146"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FQn-2k-uCU">
+                                        <rect key="frame" x="28" y="180" width="142.5" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8Y-VE-sAh">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem elas não rola café" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-Is-rrh">
+                                                <rect key="frame" x="0.0" y="34.5" width="142.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Maquinas"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FQn-2k-uCU" secondAttribute="bottom" constant="25" id="1SR-DQ-cve"/>
+                                    <constraint firstAttribute="trailing" secondItem="3v7-ts-cLV" secondAttribute="trailing" id="4Vh-ug-nGI"/>
+                                    <constraint firstItem="3v7-ts-cLV" firstAttribute="centerY" secondItem="Pri-BQ-r3V" secondAttribute="centerY" constant="10" id="F3f-Wq-n6g"/>
+                                    <constraint firstItem="FQn-2k-uCU" firstAttribute="leading" secondItem="Pri-BQ-r3V" secondAttribute="leading" constant="28" id="a5q-cw-bW8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHR-1J-gPr">
+                                <rect key="frame" x="0.0" y="556.5" width="414" height="256.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xicaras-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="It3-K1-VRW">
+                                        <rect key="frame" x="268" y="65" width="146" height="147"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eaX-JF-ZFu">
+                                        <rect key="frame" x="28" y="180.5" width="145" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acessórios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZx-gs-TX4">
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pra completar a balaca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGl-Xl-uBX">
+                                                <rect key="frame" x="0.0" y="34.5" width="145" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" name="Texto escuro"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Acessorios"/>
+                                <constraints>
+                                    <constraint firstItem="eaX-JF-ZFu" firstAttribute="leading" secondItem="zHR-1J-gPr" secondAttribute="leading" constant="28" id="4Ov-kn-lkp"/>
+                                    <constraint firstItem="It3-K1-VRW" firstAttribute="centerY" secondItem="zHR-1J-gPr" secondAttribute="centerY" constant="10" id="MRO-hG-0Wg"/>
+                                    <constraint firstAttribute="bottom" secondItem="eaX-JF-ZFu" secondAttribute="bottom" constant="25" id="PpI-hV-zVO"/>
+                                    <constraint firstAttribute="trailing" secondItem="It3-K1-VRW" secondAttribute="trailing" id="qAa-YX-fDI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iFx-60-upA"/>
+                        <color key="backgroundColor" name="Cafes"/>
+                        <constraints>
+                            <constraint firstItem="zHR-1J-gPr" firstAttribute="top" secondItem="Pri-BQ-r3V" secondAttribute="bottom" id="8g3-qX-Dl1"/>
+                            <constraint firstItem="iFx-60-upA" firstAttribute="trailing" secondItem="kOq-cX-Ser" secondAttribute="trailing" id="Eks-Ou-ate"/>
+                            <constraint firstItem="kOq-cX-Ser" firstAttribute="height" secondItem="iFx-60-upA" secondAttribute="height" multiplier="1/3" id="I0Q-Vp-CW1"/>
+                            <constraint firstItem="zHR-1J-gPr" firstAttribute="leading" secondItem="iFx-60-upA" secondAttribute="leading" id="IEY-Z7-BiH"/>
+                            <constraint firstItem="kOq-cX-Ser" firstAttribute="top" secondItem="iFx-60-upA" secondAttribute="top" id="Ktg-qm-pxb"/>
+                            <constraint firstItem="zHR-1J-gPr" firstAttribute="height" secondItem="iFx-60-upA" secondAttribute="height" multiplier="1/3" id="P6a-WL-mdl"/>
+                            <constraint firstItem="iFx-60-upA" firstAttribute="trailing" secondItem="Pri-BQ-r3V" secondAttribute="trailing" id="gLf-sS-953"/>
+                            <constraint firstItem="kOq-cX-Ser" firstAttribute="leading" secondItem="iFx-60-upA" secondAttribute="leading" id="leR-qh-HPL"/>
+                            <constraint firstItem="Pri-BQ-r3V" firstAttribute="height" secondItem="iFx-60-upA" secondAttribute="height" multiplier="1/3" id="pv9-7I-KLC"/>
+                            <constraint firstItem="Pri-BQ-r3V" firstAttribute="leading" secondItem="iFx-60-upA" secondAttribute="leading" id="vb3-KP-NPM"/>
+                            <constraint firstItem="iFx-60-upA" firstAttribute="trailing" secondItem="zHR-1J-gPr" secondAttribute="trailing" id="wdP-6M-dFi"/>
+                            <constraint firstItem="Pri-BQ-r3V" firstAttribute="top" secondItem="kOq-cX-Ser" secondAttribute="bottom" id="xc0-Tj-ktK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rt7-cw-eRo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ed7-Th-Tkw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oYl-mo-5mx">
+                    <connections>
+                        <segue destination="uc6-1M-NuA" kind="show" id="u0C-Qu-LQf"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="202.89855072463769" y="-98.4375"/>
+        </scene>
+        <!--Cafés-->
+        <scene sceneID="G7d-Bv-Y7h">
+            <objects>
+                <tableViewController title="Cafés" id="uc6-1M-NuA" customClass="CafesTableViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Arr-od-vXe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafe-cell" rowHeight="100" id="Vjh-bW-1vA" customClass="CafeTableViewCell" customModule="Nospresso" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vjh-bW-1vA" id="6YH-6r-gn1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="pvJ-RR-Ald">
+                                            <rect key="frame" x="18" y="23.5" width="53" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="53" id="rU2-83-z5j"/>
+                                                <constraint firstAttribute="height" constant="53" id="wza-Dv-14e"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAj-IC-KHi">
+                                            <rect key="frame" x="108" y="10" width="46.5" height="22.5"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
+                                            <color key="textColor" name="Texto cinza escuro"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-nT-HUW">
+                                            <rect key="frame" x="108" y="34.5" width="29.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="12"/>
+                                            <color key="textColor" name="Texto discreto"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-V3-TzP">
+                                            <rect key="frame" x="108" y="72" width="24.5" height="12"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="10"/>
+                                            <color key="textColor" name="Texto discreto"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-ki-c8l">
+                                            <rect key="frame" x="360" y="6" width="42" height="88.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUV-18-MVp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                                    <color key="tintColor" name="Texto discreto"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-0L-Wyp">
+                                                    <rect key="frame" x="0.0" y="42" width="42" height="46.5"/>
+                                                    <color key="tintColor" name="Texto discreto"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="bag.badge.plus" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7a-dY-x4R">
+                                            <rect key="frame" x="310" y="70" width="42" height="17"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                            <color key="textColor" name="VerdeDinheiro"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="c9l-V3-TzP" secondAttribute="bottom" constant="16" id="11L-Wq-hYx"/>
+                                        <constraint firstAttribute="trailing" secondItem="8Je-ki-c8l" secondAttribute="trailing" constant="12" id="21n-CU-MvF"/>
+                                        <constraint firstItem="KJk-nT-HUW" firstAttribute="leading" secondItem="ZAj-IC-KHi" secondAttribute="leading" id="30L-ef-Cro"/>
+                                        <constraint firstItem="ZAj-IC-KHi" firstAttribute="leading" secondItem="pvJ-RR-Ald" secondAttribute="trailing" constant="37" id="680-lc-6PM"/>
+                                        <constraint firstItem="ZAj-IC-KHi" firstAttribute="top" secondItem="6YH-6r-gn1" secondAttribute="top" constant="10" id="MHU-lT-hfC"/>
+                                        <constraint firstItem="KJk-nT-HUW" firstAttribute="top" secondItem="ZAj-IC-KHi" secondAttribute="bottom" constant="2" id="Pe6-9u-FMS"/>
+                                        <constraint firstItem="g7a-dY-x4R" firstAttribute="firstBaseline" secondItem="c9l-V3-TzP" secondAttribute="firstBaseline" id="RAs-RJ-t9C"/>
+                                        <constraint firstItem="8Je-ki-c8l" firstAttribute="leading" secondItem="g7a-dY-x4R" secondAttribute="trailing" constant="8" symbolic="YES" id="dVx-a8-G2x"/>
+                                        <constraint firstItem="ZAj-IC-KHi" firstAttribute="leading" secondItem="pvJ-RR-Ald" secondAttribute="trailing" constant="37" id="nQ3-II-91n"/>
+                                        <constraint firstItem="pvJ-RR-Ald" firstAttribute="leading" secondItem="6YH-6r-gn1" secondAttribute="leading" constant="18" id="sy4-h6-Vpz"/>
+                                        <constraint firstItem="pvJ-RR-Ald" firstAttribute="centerY" secondItem="8Je-ki-c8l" secondAttribute="centerY" id="uYb-9o-EUT"/>
+                                        <constraint firstItem="pvJ-RR-Ald" firstAttribute="leading" secondItem="6YH-6r-gn1" secondAttribute="leading" constant="18" id="uje-dZ-XhM"/>
+                                        <constraint firstItem="8Je-ki-c8l" firstAttribute="centerY" secondItem="6YH-6r-gn1" secondAttribute="centerY" id="vkD-Lw-sv1"/>
+                                        <constraint firstItem="c9l-V3-TzP" firstAttribute="leading" secondItem="KJk-nT-HUW" secondAttribute="leading" id="x2a-C8-HEI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cafeImageView" destination="pvJ-RR-Ald" id="gCt-yz-jix"/>
+                                    <outlet property="descricaoLabel" destination="KJk-nT-HUW" id="cSU-ow-gnJ"/>
+                                    <outlet property="intensidadeLabel" destination="c9l-V3-TzP" id="bVp-1Q-hRC"/>
+                                    <outlet property="nomeLabel" destination="ZAj-IC-KHi" id="umj-SV-vPa"/>
+                                    <outlet property="precoLabel" destination="g7a-dY-x4R" id="lyJ-7o-bhn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uc6-1M-NuA" id="Cey-ay-M1r"/>
+                            <outlet property="delegate" destination="uc6-1M-NuA" id="3Li-2j-bOe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cafés" id="hPt-D1-XAF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W82-do-Ofw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="-98.4375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dEn-zN-ucT">
+            <objects>
+                <tabBarController id="QrW-kO-zon" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="scu-zq-A7d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2rm-NN-Q1v" kind="relationship" relationship="viewControllers" id="0sh-At-iTq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmc-hP-oHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="-802"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="kY8-ho-8Dq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2rm-NN-Q1v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Produtos" image="cart" catalog="system" id="4e2-LX-icV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zvN-3j-djJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dgV-OA-Od3" kind="relationship" relationship="rootViewController" id="TFP-fE-37K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yT4-d6-utJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707.24637681159425" y="-98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
+        <image name="capsulas-inicio" width="136" height="136"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <image name="xicaras-inicio" width="146" height="147"/>
+        <namedColor name="Acessorios">
+            <color red="0.94900000095367432" green="0.88999998569488525" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cafes">
+            <color red="0.92900002002716064" green="0.87099999189376831" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Maquinas">
+            <color red="0.86299997568130493" green="0.72200000286102295" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Texto cinza escuro">
+            <color red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Texto discreto">
+            <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Texto escuro">
+            <color red="0.23899999260902405" green="0.23899999260902405" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VerdeDinheiro">
+            <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
