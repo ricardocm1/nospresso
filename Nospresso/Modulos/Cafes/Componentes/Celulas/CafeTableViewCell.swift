@@ -8,7 +8,6 @@
 import UIKit
 
 class CafeTableViewCell: UITableViewCell {
-
     
     @IBOutlet weak var cafeImageView: UIImageView!
     @IBOutlet weak var nomeLabel: UILabel!
@@ -18,11 +17,14 @@ class CafeTableViewCell: UITableViewCell {
     
     
     func configurar(com cafe: Cafe) {
-        cafeImageView.carregarImage(usando: cafe.imagem)
+        cafeImageView.carregarImagem(usando: cafe.imagem)
         nomeLabel.text = cafe.nome
         descricaoLabel.text = cafe.descricao
-        intensidadeLabel.text = String("Intensidade \(cafe.intensidade ?? 0)")
         precoLabel.text = cafe.precoUnitario.formatoMoeda()
+        
+        if let intensidade = cafe.intensidade {
+            intensidadeLabel.text = String("Intensidade \(intensidade)")
+        }
     }
     
 }

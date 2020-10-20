@@ -15,6 +15,10 @@
 		D109CB9C25365D840018B61C /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D109CB9B25365D840018B61C /* Cafe.swift */; };
 		D109CBA125365EEA0018B61C /* Acessorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D109CBA025365EEA0018B61C /* Acessorio.swift */; };
 		D109CBA625365F380018B61C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D109CBA525365F380018B61C /* Item.swift */; };
+		D1284372253F77D400C5038F /* DetalheCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1284371253F77D400C5038F /* DetalheCafeViewController.swift */; };
+		D128437B253F7F7F00C5038F /* ContadorIntensidadeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128437A253F7F7F00C5038F /* ContadorIntensidadeStackView.swift */; };
+		D1284383253F888900C5038F /* DetalheCafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1284382253F888900C5038F /* DetalheCafePresenter.swift */; };
+		D1284388253F890800C5038F /* DetalheCafe+Protocolos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1284387253F890800C5038F /* DetalheCafe+Protocolos.swift */; };
 		D148FE3F253B6AF900F0CDD6 /* MenuProdutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FE3E253B6AF900F0CDD6 /* MenuProdutosViewController.swift */; };
 		D148FE45253B737900F0CDD6 /* UIViewController+Barbadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FE44253B737900F0CDD6 /* UIViewController+Barbadas.swift */; };
 		D148FE51253B894B00F0CDD6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FE50253B894B00F0CDD6 /* R.generated.swift */; };
@@ -79,6 +83,10 @@
 		D109CB9B25365D840018B61C /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		D109CBA025365EEA0018B61C /* Acessorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acessorio.swift; sourceTree = "<group>"; };
 		D109CBA525365F380018B61C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D1284371253F77D400C5038F /* DetalheCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafeViewController.swift; sourceTree = "<group>"; };
+		D128437A253F7F7F00C5038F /* ContadorIntensidadeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorIntensidadeStackView.swift; sourceTree = "<group>"; };
+		D1284382253F888900C5038F /* DetalheCafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafePresenter.swift; sourceTree = "<group>"; };
+		D1284387253F890800C5038F /* DetalheCafe+Protocolos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetalheCafe+Protocolos.swift"; sourceTree = "<group>"; };
 		D148FE3E253B6AF900F0CDD6 /* MenuProdutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProdutosViewController.swift; sourceTree = "<group>"; };
 		D148FE44253B737900F0CDD6 /* UIViewController+Barbadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Barbadas.swift"; sourceTree = "<group>"; };
 		D148FE50253B894B00F0CDD6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -189,6 +197,25 @@
 			path = Modelos;
 			sourceTree = "<group>";
 		};
+		D1284370253F779600C5038F /* Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				D1284379253F7F5500C5038F /* Componentes */,
+				D1284371253F77D400C5038F /* DetalheCafeViewController.swift */,
+				D1284382253F888900C5038F /* DetalheCafePresenter.swift */,
+				D1284387253F890800C5038F /* DetalheCafe+Protocolos.swift */,
+			);
+			path = Cafe;
+			sourceTree = "<group>";
+		};
+		D1284379253F7F5500C5038F /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				D128437A253F7F7F00C5038F /* ContadorIntensidadeStackView.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
 		D148FE43253B734500F0CDD6 /* Extensoes */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +255,7 @@
 		D16CB2F12538F48C008A1FCF /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				D1284370253F779600C5038F /* Cafe */,
 				D16CB2FF2538F582008A1FCF /* Cafes */,
 				D148FE3E253B6AF900F0CDD6 /* MenuProdutosViewController.swift */,
 			);
@@ -610,17 +638,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D16CB3092538FA9E008A1FCF /* CafeTableViewCell.swift in Sources */,
+				D1284383253F888900C5038F /* DetalheCafePresenter.swift in Sources */,
 				D109CBA625365F380018B61C /* Item.swift in Sources */,
 				D1C55D23253D0A850005B8FD /* UIImageView+CarregarImagem.swift in Sources */,
 				D1C55D0C253CDB6F0005B8FD /* Pseudominos.swift in Sources */,
+				D1284388253F890800C5038F /* DetalheCafe+Protocolos.swift in Sources */,
 				D148FE51253B894B00F0CDD6 /* R.generated.swift in Sources */,
 				D148FE3F253B6AF900F0CDD6 /* MenuProdutosViewController.swift in Sources */,
 				D16CB3012538F596008A1FCF /* CafesTableViewController.swift in Sources */,
+				D1284372253F77D400C5038F /* DetalheCafeViewController.swift in Sources */,
 				D109CB9725365D760018B61C /* CategoriaCafe.swift in Sources */,
 				D1F05041253639C6009A12FA /* ViewController.swift in Sources */,
 				D1C55D13253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift in Sources */,
 				D148FE45253B737900F0CDD6 /* UIViewController+Barbadas.swift in Sources */,
 				D1F5DF6B253DB7C300037AC3 /* Double+FormatoMoeda.swift in Sources */,
+				D128437B253F7F7F00C5038F /* ContadorIntensidadeStackView.swift in Sources */,
 				D1F0503D253639C6009A12FA /* AppDelegate.swift in Sources */,
 				D109CB8125365CCA0018B61C /* Endpoint.swift in Sources */,
 				D109CB9C25365D840018B61C /* Cafe.swift in Sources */,

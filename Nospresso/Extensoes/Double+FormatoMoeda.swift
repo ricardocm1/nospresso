@@ -13,15 +13,14 @@ extension Double {
         let prefixo = "R$ "
         let valor = NSNumber(value: self)
         
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
+        let formato = NumberFormatter()
+        formato.numberStyle = .currency
         
-        formatter.locale = NSLocale(localeIdentifier: "pt_BR") as Locale
+        formato.locale = NSLocale(localeIdentifier: "pt_BR") as Locale
         
         let replacer = comPrefixo ? "\(prefixo)" : ""
         
-        return formatter.string(from: valor)?
-            .replacingOccurrences(of: "\(prefixo)", with: replacer) ?? ""
+        return formato.string(from: valor)?.replacingOccurrences(of: "\(prefixo)", with: replacer) ?? ""
     }
     
 }

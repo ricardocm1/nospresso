@@ -10,10 +10,12 @@ import Nuke
 
 extension UIImageView {
     
-    func carregarImage(usando url: String) {
+    func carregarImagem(usando url: String) {
         guard let url = URL(string: url) else { return }
         
-        Nuke.loadImage(with: url, into: self)
+        let opcoes = ImageLoadingOptions(placeholder: UIImage(systemName: "photo"))
+        
+        Nuke.loadImage(with: url, options: opcoes, into: self)
     }
     
 }
