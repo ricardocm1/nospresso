@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MedidaView" customModule="Nospresso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-yn-nrn">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="9us-Me-je6"/>
+                        <constraint firstAttribute="width" constant="24" id="s0s-Q8-Mcg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKN-x7-aOE">
+                    <rect key="frame" x="28" y="5" width="45" height="14"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                    <color key="textColor" name="Texto discreto"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vKN-x7-aOE" secondAttribute="trailing" constant="8" id="2lf-iU-Anc"/>
+                <constraint firstItem="JSb-yn-nrn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8DW-Tw-jl8"/>
+                <constraint firstItem="vKN-x7-aOE" firstAttribute="leading" secondItem="JSb-yn-nrn" secondAttribute="trailing" constant="4" id="Afv-dv-KCf"/>
+                <constraint firstItem="JSb-yn-nrn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Rdc-BC-2JQ"/>
+                <constraint firstItem="JSb-yn-nrn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="SR5-fB-k5m"/>
+                <constraint firstItem="vKN-x7-aOE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uEs-MW-gLq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="canequinhaImageView" destination="JSb-yn-nrn" id="KjN-h5-hsZ"/>
+                <outlet property="nomeLabel" destination="vKN-x7-aOE" id="giH-2G-FNN"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Texto discreto">
+            <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -16,10 +16,21 @@ class MenuProdutosViewController: UIViewController {
 //
 //    }
     
+    @IBOutlet private weak var maquinaView: UIView!
+    
+    @objc
+    private func tocouEmMaquinas(_ remetente: Any) {
+        let vc = MaquinasViewController(nib: R.nib.maquinasViewController)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         removerTextoDoBotaoVoltar()
+        
+        let reconhecedor = UITapGestureRecognizer(target: self, action: #selector(self.tocouEmMaquinas))
+        maquinaView.addGestureRecognizer(reconhecedor)
     }
     
     override func viewWillAppear(_ animated: Bool) {

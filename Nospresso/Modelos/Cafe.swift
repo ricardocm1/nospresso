@@ -17,6 +17,7 @@ public struct Cafe: Decodable {
     let medidas: [Medida]
 }
 
-enum Medida: String, Decodable {
+public enum Medida: String, Decodable {
     case lungo, espresso, ristretto
 }
+

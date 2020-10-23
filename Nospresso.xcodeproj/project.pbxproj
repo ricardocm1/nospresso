@@ -34,6 +34,14 @@
 		D16CB2ED2538EC7A008A1FCF /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D16CB2E32538EC7A008A1FCF /* OpenSans-Light.ttf */; };
 		D16CB3012538F596008A1FCF /* CafesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CB3002538F596008A1FCF /* CafesTableViewController.swift */; };
 		D16CB3092538FA9E008A1FCF /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CB3082538FA9E008A1FCF /* CafeTableViewCell.swift */; };
+		D189CA3025421CF20097CE6B /* MedidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA2F25421CF20097CE6B /* MedidaView.swift */; };
+		D189CA3525421D1C0097CE6B /* MedidaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D189CA3425421D1C0097CE6B /* MedidaView.xib */; };
+		D189CA3C254228380097CE6B /* MaquinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA3A254228380097CE6B /* MaquinasViewController.swift */; };
+		D189CA3D254228380097CE6B /* MaquinasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D189CA3B254228380097CE6B /* MaquinasViewController.xib */; };
+		D189CA4725422C550097CE6B /* MaquinaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA4525422C550097CE6B /* MaquinaCollectionViewCell.swift */; };
+		D189CA4825422C550097CE6B /* MaquinaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */; };
+		D189CA4D25422F820097CE6B /* Maquinas+Protocolos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA4C25422F820097CE6B /* Maquinas+Protocolos.swift */; };
+		D189CA5225422FBD0097CE6B /* MaquinasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA5125422FBD0097CE6B /* MaquinasPresenter.swift */; };
 		D1A8072D3C0B8831A437BA3C /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD523C65A078BCA4EC89D78 /* Pods_NospressoTests.framework */; };
 		D1C55D0C253CDB6F0005B8FD /* Pseudominos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C55D0B253CDB6F0005B8FD /* Pseudominos.swift */; };
 		D1C55D13253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C55D12253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift */; };
@@ -102,6 +110,14 @@
 		D16CB2E32538EC7A008A1FCF /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		D16CB3002538F596008A1FCF /* CafesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesTableViewController.swift; sourceTree = "<group>"; };
 		D16CB3082538FA9E008A1FCF /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		D189CA2F25421CF20097CE6B /* MedidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidaView.swift; sourceTree = "<group>"; };
+		D189CA3425421D1C0097CE6B /* MedidaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedidaView.xib; sourceTree = "<group>"; };
+		D189CA3A254228380097CE6B /* MaquinasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasViewController.swift; sourceTree = "<group>"; };
+		D189CA3B254228380097CE6B /* MaquinasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinasViewController.xib; sourceTree = "<group>"; };
+		D189CA4525422C550097CE6B /* MaquinaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinaCollectionViewCell.swift; sourceTree = "<group>"; };
+		D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinaCollectionViewCell.xib; sourceTree = "<group>"; };
+		D189CA4C25422F820097CE6B /* Maquinas+Protocolos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maquinas+Protocolos.swift"; sourceTree = "<group>"; };
+		D189CA5125422FBD0097CE6B /* MaquinasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasPresenter.swift; sourceTree = "<group>"; };
 		D1C55D0B253CDB6F0005B8FD /* Pseudominos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pseudominos.swift; sourceTree = "<group>"; };
 		D1C55D12253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeCafeHeaderView.swift; sourceTree = "<group>"; };
 		D1C55D1A253CDD720005B8FD /* CategoriaDeCafeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeCafeHeaderView.xib; sourceTree = "<group>"; };
@@ -212,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				D128437A253F7F7F00C5038F /* ContadorIntensidadeStackView.swift */,
+				D189CA2F25421CF20097CE6B /* MedidaView.swift */,
+				D189CA3425421D1C0097CE6B /* MedidaView.xib */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -255,6 +273,7 @@
 		D16CB2F12538F48C008A1FCF /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				D189CA39254227F40097CE6B /* Maquinas */,
 				D1284370253F779600C5038F /* Cafe */,
 				D16CB2FF2538F582008A1FCF /* Cafes */,
 				D148FE3E253B6AF900F0CDD6 /* MenuProdutosViewController.swift */,
@@ -269,6 +288,27 @@
 				D16CB3002538F596008A1FCF /* CafesTableViewController.swift */,
 			);
 			path = Cafes;
+			sourceTree = "<group>";
+		};
+		D189CA39254227F40097CE6B /* Maquinas */ = {
+			isa = PBXGroup;
+			children = (
+				D189CA4425422C2B0097CE6B /* Componentes */,
+				D189CA3A254228380097CE6B /* MaquinasViewController.swift */,
+				D189CA3B254228380097CE6B /* MaquinasViewController.xib */,
+				D189CA4C25422F820097CE6B /* Maquinas+Protocolos.swift */,
+				D189CA5125422FBD0097CE6B /* MaquinasPresenter.swift */,
+			);
+			path = Maquinas;
+			sourceTree = "<group>";
+		};
+		D189CA4425422C2B0097CE6B /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				D189CA4525422C550097CE6B /* MaquinaCollectionViewCell.swift */,
+				D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 		D1C55D10253CDC880005B8FD /* Componentes */ = {
@@ -465,8 +505,11 @@
 				D16CB2EA2538EC7A008A1FCF /* OpenSans-SemiBold.ttf in Resources */,
 				D1F05044253639C6009A12FA /* Main.storyboard in Resources */,
 				D16CB2E72538EC7A008A1FCF /* OpenSans-BoldItalic.ttf in Resources */,
+				D189CA3525421D1C0097CE6B /* MedidaView.xib in Resources */,
 				D16CB2E42538EC7A008A1FCF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				D16CB2E92538EC7A008A1FCF /* OpenSans-Bold.ttf in Resources */,
+				D189CA3D254228380097CE6B /* MaquinasViewController.xib in Resources */,
+				D189CA4825422C550097CE6B /* MaquinaCollectionViewCell.xib in Resources */,
 				D16CB2E62538EC7A008A1FCF /* OpenSans-Regular.ttf in Resources */,
 				D16CB2EB2538EC7A008A1FCF /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				D16CB2EC2538EC7A008A1FCF /* OpenSans-Italic.ttf in Resources */,
@@ -639,8 +682,11 @@
 			files = (
 				D16CB3092538FA9E008A1FCF /* CafeTableViewCell.swift in Sources */,
 				D1284383253F888900C5038F /* DetalheCafePresenter.swift in Sources */,
+				D189CA3025421CF20097CE6B /* MedidaView.swift in Sources */,
 				D109CBA625365F380018B61C /* Item.swift in Sources */,
 				D1C55D23253D0A850005B8FD /* UIImageView+CarregarImagem.swift in Sources */,
+				D189CA5225422FBD0097CE6B /* MaquinasPresenter.swift in Sources */,
+				D189CA4725422C550097CE6B /* MaquinaCollectionViewCell.swift in Sources */,
 				D1C55D0C253CDB6F0005B8FD /* Pseudominos.swift in Sources */,
 				D1284388253F890800C5038F /* DetalheCafe+Protocolos.swift in Sources */,
 				D148FE51253B894B00F0CDD6 /* R.generated.swift in Sources */,
@@ -653,6 +699,8 @@
 				D148FE45253B737900F0CDD6 /* UIViewController+Barbadas.swift in Sources */,
 				D1F5DF6B253DB7C300037AC3 /* Double+FormatoMoeda.swift in Sources */,
 				D128437B253F7F7F00C5038F /* ContadorIntensidadeStackView.swift in Sources */,
+				D189CA3C254228380097CE6B /* MaquinasViewController.swift in Sources */,
+				D189CA4D25422F820097CE6B /* Maquinas+Protocolos.swift in Sources */,
 				D1F0503D253639C6009A12FA /* AppDelegate.swift in Sources */,
 				D109CB8125365CCA0018B61C /* Endpoint.swift in Sources */,
 				D109CB9C25365D840018B61C /* Cafe.swift in Sources */,

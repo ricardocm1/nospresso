@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MaquinaCell" id="gTV-IL-0wX" customClass="MaquinaCollectionViewCell" customModule="Nospresso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPn-Ir-eXy">
+                        <rect key="frame" x="12" y="12" width="49" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="ChV-cR-01M">
+                        <rect key="frame" x="20" y="67" width="120" height="146"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="GHy-EP-hm0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnS-7x-g54">
+                        <rect key="frame" x="12" y="244.5" width="49" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                        <color key="textColor" name="VerdeDinheiro"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-VV-xBG">
+                        <rect key="frame" x="127" y="246" width="21" height="22"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DPn-Ir-eXy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="AKh-6s-Fy8"/>
+                <constraint firstItem="jYG-VV-xBG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lnS-7x-g54" secondAttribute="trailing" constant="4" id="GdZ-Ix-AcJ"/>
+                <constraint firstAttribute="bottom" secondItem="lnS-7x-g54" secondAttribute="bottom" constant="12" id="IrE-eW-YSR"/>
+                <constraint firstAttribute="trailing" secondItem="jYG-VV-xBG" secondAttribute="trailing" constant="12" id="K9b-KW-8XY"/>
+                <constraint firstItem="lnS-7x-g54" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="UQ2-BF-boM"/>
+                <constraint firstAttribute="bottom" secondItem="jYG-VV-xBG" secondAttribute="bottom" constant="12" id="WAF-eu-2zO"/>
+                <constraint firstItem="DPn-Ir-eXy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="YeC-xA-LOD"/>
+                <constraint firstItem="ChV-cR-01M" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aSb-Ty-j0x"/>
+                <constraint firstItem="ChV-cR-01M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bUR-6v-Umi"/>
+            </constraints>
+            <connections>
+                <outlet property="favoritarButton" destination="jYG-VV-xBG" id="bxs-YJ-BuV"/>
+                <outlet property="fotoImageView" destination="ChV-cR-01M" id="JZ2-U2-Ufy"/>
+                <outlet property="precoLabel" destination="lnS-7x-g54" id="Vp0-kr-1aR"/>
+                <outlet property="tituloLabel" destination="DPn-Ir-eXy" id="CLR-Od-K4z"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="131"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <namedColor name="VerdeDinheiro">
+            <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
