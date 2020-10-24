@@ -11,7 +11,7 @@ import UIKit
 class MaquinasPresenter: NSObject {
     
     var view: MaquinasViewType
-    var maquinas: [Maquina] = []
+    private(set) var maquinas: [Maquina] = []
     let api = Api()
     
     init(view: MaquinasViewType) {
@@ -23,12 +23,17 @@ class MaquinasPresenter: NSObject {
 extension MaquinasPresenter: MaquinasPresenterType {
     
     func telaCarregou() {
+        view.exibirCarregamento()
+        
         api.requisitar(endpoint: .maquinas, sucesso: { (maquinas: [Maquina]) in
             self.maquinas = maquinas
-            self.view.recarregarColecao()
+            DispatchQueue.main.async {
+                self.view.dispensarCarregamento()
+                self.view.recarregarColecao()
+            }
         },
-        falha: { _ in
-            
+        falha: { (erro) in
+            print(erro)
         })
     }
 }

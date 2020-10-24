@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarregamentoViewController" customModule="Nospresso" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mM-Jo-qX2">
+                    <rect key="frame" x="132" y="373" width="150" height="150"/>
+                    <color key="backgroundColor" name="Cinza sobreposicao"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2TZ-UT-lmE"/>
+                        <constraint firstAttribute="width" constant="150" id="wRo-NZ-Omx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9g7-lk-475">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Preto sobreposicao"/>
+            <constraints>
+                <constraint firstItem="7mM-Jo-qX2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JJH-0M-S5p"/>
+                <constraint firstItem="9g7-lk-475" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JJT-ZO-O7s"/>
+                <constraint firstItem="7mM-Jo-qX2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vjd-bD-Ejd"/>
+                <constraint firstItem="9g7-lk-475" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xtt-PJ-PDA"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Cinza sobreposicao">
+            <color red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="0.70923912525177002" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Preto sobreposicao">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.60190218687057495" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

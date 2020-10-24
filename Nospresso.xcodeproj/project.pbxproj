@@ -34,6 +34,7 @@
 		D16CB2ED2538EC7A008A1FCF /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D16CB2E32538EC7A008A1FCF /* OpenSans-Light.ttf */; };
 		D16CB3012538F596008A1FCF /* CafesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CB3002538F596008A1FCF /* CafesTableViewController.swift */; };
 		D16CB3092538FA9E008A1FCF /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CB3082538FA9E008A1FCF /* CafeTableViewCell.swift */; };
+		D179C0D12543392D0080B34F /* String+TextoAtribuido.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179C0D02543392D0080B34F /* String+TextoAtribuido.swift */; };
 		D189CA3025421CF20097CE6B /* MedidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA2F25421CF20097CE6B /* MedidaView.swift */; };
 		D189CA3525421D1C0097CE6B /* MedidaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D189CA3425421D1C0097CE6B /* MedidaView.xib */; };
 		D189CA3C254228380097CE6B /* MaquinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA3A254228380097CE6B /* MaquinasViewController.swift */; };
@@ -42,6 +43,16 @@
 		D189CA4825422C550097CE6B /* MaquinaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */; };
 		D189CA4D25422F820097CE6B /* Maquinas+Protocolos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA4C25422F820097CE6B /* Maquinas+Protocolos.swift */; };
 		D189CA5225422FBD0097CE6B /* MaquinasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189CA5125422FBD0097CE6B /* MaquinasPresenter.swift */; };
+		D1A0F3D125445197009007E1 /* DetalheProdutoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3CF25445197009007E1 /* DetalheProdutoModalViewController.swift */; };
+		D1A0F3D225445197009007E1 /* DetalheProdutoModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A0F3D025445197009007E1 /* DetalheProdutoModalViewController.xib */; };
+		D1A0F3DA25445857009007E1 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3D925445857009007E1 /* Produto.swift */; };
+		D1A0F3E225445F30009007E1 /* CarregamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3E025445F30009007E1 /* CarregamentoViewController.swift */; };
+		D1A0F3E325445F30009007E1 /* CarregamentoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A0F3E125445F30009007E1 /* CarregamentoViewController.xib */; };
+		D1A0F3E82544613E009007E1 /* CarregamentoViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3E72544613E009007E1 /* CarregamentoViewType.swift */; };
+		D1A0F3EE254467D8009007E1 /* Favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3ED254467D8009007E1 /* Favoritos.swift */; };
+		D1A0F3F625446A7B009007E1 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3F525446A7B009007E1 /* Favorito.swift */; };
+		D1A0F3FB25447645009007E1 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3FA25447645009007E1 /* FavoritoTableViewCell.swift */; };
+		D1A0F40025447792009007E1 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A0F3FF25447792009007E1 /* FavoritosViewController.swift */; };
 		D1A8072D3C0B8831A437BA3C /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD523C65A078BCA4EC89D78 /* Pods_NospressoTests.framework */; };
 		D1C55D0C253CDB6F0005B8FD /* Pseudominos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C55D0B253CDB6F0005B8FD /* Pseudominos.swift */; };
 		D1C55D13253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C55D12253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift */; };
@@ -110,6 +121,7 @@
 		D16CB2E32538EC7A008A1FCF /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		D16CB3002538F596008A1FCF /* CafesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesTableViewController.swift; sourceTree = "<group>"; };
 		D16CB3082538FA9E008A1FCF /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		D179C0D02543392D0080B34F /* String+TextoAtribuido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextoAtribuido.swift"; sourceTree = "<group>"; };
 		D189CA2F25421CF20097CE6B /* MedidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidaView.swift; sourceTree = "<group>"; };
 		D189CA3425421D1C0097CE6B /* MedidaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedidaView.xib; sourceTree = "<group>"; };
 		D189CA3A254228380097CE6B /* MaquinasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +130,16 @@
 		D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinaCollectionViewCell.xib; sourceTree = "<group>"; };
 		D189CA4C25422F820097CE6B /* Maquinas+Protocolos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maquinas+Protocolos.swift"; sourceTree = "<group>"; };
 		D189CA5125422FBD0097CE6B /* MaquinasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasPresenter.swift; sourceTree = "<group>"; };
+		D1A0F3CF25445197009007E1 /* DetalheProdutoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheProdutoModalViewController.swift; sourceTree = "<group>"; };
+		D1A0F3D025445197009007E1 /* DetalheProdutoModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheProdutoModalViewController.xib; sourceTree = "<group>"; };
+		D1A0F3D925445857009007E1 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		D1A0F3E025445F30009007E1 /* CarregamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewController.swift; sourceTree = "<group>"; };
+		D1A0F3E125445F30009007E1 /* CarregamentoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarregamentoViewController.xib; sourceTree = "<group>"; };
+		D1A0F3E72544613E009007E1 /* CarregamentoViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewType.swift; sourceTree = "<group>"; };
+		D1A0F3ED254467D8009007E1 /* Favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritos.swift; sourceTree = "<group>"; };
+		D1A0F3F525446A7B009007E1 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
+		D1A0F3FA25447645009007E1 /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
+		D1A0F3FF25447792009007E1 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		D1C55D0B253CDB6F0005B8FD /* Pseudominos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pseudominos.swift; sourceTree = "<group>"; };
 		D1C55D12253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeCafeHeaderView.swift; sourceTree = "<group>"; };
 		D1C55D1A253CDD720005B8FD /* CategoriaDeCafeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeCafeHeaderView.xib; sourceTree = "<group>"; };
@@ -209,6 +231,8 @@
 				D109CB9B25365D840018B61C /* Cafe.swift */,
 				D109CBA025365EEA0018B61C /* Acessorio.swift */,
 				D109CBA525365F380018B61C /* Item.swift */,
+				D1A0F3D925445857009007E1 /* Produto.swift */,
+				D1A0F3F525446A7B009007E1 /* Favorito.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -241,6 +265,7 @@
 				D1C55D0B253CDB6F0005B8FD /* Pseudominos.swift */,
 				D1C55D22253D0A850005B8FD /* UIImageView+CarregarImagem.swift */,
 				D1F5DF6A253DB7C300037AC3 /* Double+FormatoMoeda.swift */,
+				D179C0D02543392D0080B34F /* String+TextoAtribuido.swift */,
 			);
 			path = Extensoes;
 			sourceTree = "<group>";
@@ -273,6 +298,8 @@
 		D16CB2F12538F48C008A1FCF /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				D1A0F3EC254467C3009007E1 /* Favoritos */,
+				D1A0F3CE25445152009007E1 /* DetalheProduto */,
 				D189CA39254227F40097CE6B /* Maquinas */,
 				D1284370253F779600C5038F /* Cafe */,
 				D16CB2FF2538F582008A1FCF /* Cafes */,
@@ -309,6 +336,43 @@
 				D189CA4625422C550097CE6B /* MaquinaCollectionViewCell.xib */,
 			);
 			path = Componentes;
+			sourceTree = "<group>";
+		};
+		D1A0F3CE25445152009007E1 /* DetalheProduto */ = {
+			isa = PBXGroup;
+			children = (
+				D1A0F3CF25445197009007E1 /* DetalheProdutoModalViewController.swift */,
+				D1A0F3D025445197009007E1 /* DetalheProdutoModalViewController.xib */,
+			);
+			path = DetalheProduto;
+			sourceTree = "<group>";
+		};
+		D1A0F3DE25445F0B009007E1 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				D1A0F3DF25445F1D009007E1 /* Carregamento */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		D1A0F3DF25445F1D009007E1 /* Carregamento */ = {
+			isa = PBXGroup;
+			children = (
+				D1A0F3E025445F30009007E1 /* CarregamentoViewController.swift */,
+				D1A0F3E125445F30009007E1 /* CarregamentoViewController.xib */,
+				D1A0F3E72544613E009007E1 /* CarregamentoViewType.swift */,
+			);
+			path = Carregamento;
+			sourceTree = "<group>";
+		};
+		D1A0F3EC254467C3009007E1 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				D1A0F3ED254467D8009007E1 /* Favoritos.swift */,
+				D1A0F3FA25447645009007E1 /* FavoritoTableViewCell.swift */,
+				D1A0F3FF25447792009007E1 /* FavoritosViewController.swift */,
+			);
+			path = Favoritos;
 			sourceTree = "<group>";
 		};
 		D1C55D10253CDC880005B8FD /* Componentes */ = {
@@ -354,6 +418,7 @@
 		D1F0503B253639C6009A12FA /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				D1A0F3DE25445F0B009007E1 /* Componentes */,
 				D148FE50253B894B00F0CDD6 /* R.generated.swift */,
 				D148FE43253B734500F0CDD6 /* Extensoes */,
 				D16CB2F12538F48C008A1FCF /* Modulos */,
@@ -506,6 +571,7 @@
 				D1F05044253639C6009A12FA /* Main.storyboard in Resources */,
 				D16CB2E72538EC7A008A1FCF /* OpenSans-BoldItalic.ttf in Resources */,
 				D189CA3525421D1C0097CE6B /* MedidaView.xib in Resources */,
+				D1A0F3E325445F30009007E1 /* CarregamentoViewController.xib in Resources */,
 				D16CB2E42538EC7A008A1FCF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				D16CB2E92538EC7A008A1FCF /* OpenSans-Bold.ttf in Resources */,
 				D189CA3D254228380097CE6B /* MaquinasViewController.xib in Resources */,
@@ -515,6 +581,7 @@
 				D16CB2EC2538EC7A008A1FCF /* OpenSans-Italic.ttf in Resources */,
 				D16CB2E82538EC7A008A1FCF /* OpenSans-LightItalic.ttf in Resources */,
 				D16CB2E52538EC7A008A1FCF /* OpenSans-ExtraBold.ttf in Resources */,
+				D1A0F3D225445197009007E1 /* DetalheProdutoModalViewController.xib in Resources */,
 				D1C55D1B253CDD720005B8FD /* CategoriaDeCafeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,23 +750,32 @@
 				D16CB3092538FA9E008A1FCF /* CafeTableViewCell.swift in Sources */,
 				D1284383253F888900C5038F /* DetalheCafePresenter.swift in Sources */,
 				D189CA3025421CF20097CE6B /* MedidaView.swift in Sources */,
+				D1A0F3FB25447645009007E1 /* FavoritoTableViewCell.swift in Sources */,
 				D109CBA625365F380018B61C /* Item.swift in Sources */,
+				D1A0F3E225445F30009007E1 /* CarregamentoViewController.swift in Sources */,
 				D1C55D23253D0A850005B8FD /* UIImageView+CarregarImagem.swift in Sources */,
 				D189CA5225422FBD0097CE6B /* MaquinasPresenter.swift in Sources */,
 				D189CA4725422C550097CE6B /* MaquinaCollectionViewCell.swift in Sources */,
 				D1C55D0C253CDB6F0005B8FD /* Pseudominos.swift in Sources */,
+				D1A0F3EE254467D8009007E1 /* Favoritos.swift in Sources */,
+				D1A0F3D125445197009007E1 /* DetalheProdutoModalViewController.swift in Sources */,
 				D1284388253F890800C5038F /* DetalheCafe+Protocolos.swift in Sources */,
 				D148FE51253B894B00F0CDD6 /* R.generated.swift in Sources */,
 				D148FE3F253B6AF900F0CDD6 /* MenuProdutosViewController.swift in Sources */,
+				D1A0F3DA25445857009007E1 /* Produto.swift in Sources */,
 				D16CB3012538F596008A1FCF /* CafesTableViewController.swift in Sources */,
 				D1284372253F77D400C5038F /* DetalheCafeViewController.swift in Sources */,
 				D109CB9725365D760018B61C /* CategoriaCafe.swift in Sources */,
 				D1F05041253639C6009A12FA /* ViewController.swift in Sources */,
+				D1A0F3F625446A7B009007E1 /* Favorito.swift in Sources */,
 				D1C55D13253CDD210005B8FD /* CategoriaDeCafeHeaderView.swift in Sources */,
 				D148FE45253B737900F0CDD6 /* UIViewController+Barbadas.swift in Sources */,
 				D1F5DF6B253DB7C300037AC3 /* Double+FormatoMoeda.swift in Sources */,
+				D1A0F40025447792009007E1 /* FavoritosViewController.swift in Sources */,
 				D128437B253F7F7F00C5038F /* ContadorIntensidadeStackView.swift in Sources */,
+				D1A0F3E82544613E009007E1 /* CarregamentoViewType.swift in Sources */,
 				D189CA3C254228380097CE6B /* MaquinasViewController.swift in Sources */,
+				D179C0D12543392D0080B34F /* String+TextoAtribuido.swift in Sources */,
 				D189CA4D25422F820097CE6B /* Maquinas+Protocolos.swift in Sources */,
 				D1F0503D253639C6009A12FA /* AppDelegate.swift in Sources */,
 				D109CB8125365CCA0018B61C /* Endpoint.swift in Sources */,

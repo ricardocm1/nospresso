@@ -15,6 +15,8 @@ class MaquinasViewController: UIViewController {
     
     lazy var presenter: Presenter = MaquinasPresenter(view: self)
     
+    var telaDeCarregamento: CarregamentoViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,15 +25,21 @@ class MaquinasViewController: UIViewController {
         maquinaCollectionView.register(R.nib.maquinaCollectionViewCell)
         presenter.telaCarregou()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.barTintColor = Paleta.maquinas()
+        navigationController?.navigationBar.tintColor = .label
+    }
 
 }
 
 extension MaquinasViewController: MaquinasViewType {
     
     func recarregarColecao() {
-        DispatchQueue.main.async {
-            self.maquinaCollectionView.reloadData()
-        }
+        self.maquinaCollectionView.reloadData()
     }
     
 }
@@ -39,23 +47,41 @@ extension MaquinasViewController: MaquinasViewType {
 extension MaquinasViewController: UICollectionViewDelegateFlowLayout {
     
     enum ConstantesDeLayout {
-        static let alturaDaCelula = 260
+        static let alturaDaCelula: CGFloat = 260
+        static let espacamentoHorizontal: CGFloat = 16
+        static let espacamentoVertical: CGFloat = 20
+        
+        static func largura(baseadaNa larguraDaCollectionView: CGFloat) -> CGFloat {
+            (larguraDaCollectionView - espacamentoHorizontal) / 2 - espacamentoHorizontal
+        }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        <#code#>
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        <#code#>
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        <#code#>
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        <#code#>
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        .init(width: ConstantesDeLayout.largura(baseadaNa: collectionView.frame.width),
+              height: ConstantesDeLayout.alturaDaCelula)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        .init(top:  ConstantesDeLayout.espacamentoVertical,
+              left: ConstantesDeLayout.espacamentoHorizontal,
+              bottom: ConstantesDeLayout.espacamentoVertical,
+              right: ConstantesDeLayout.espacamentoHorizontal)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        ConstantesDeLayout.espacamentoHorizontal
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        ConstantesDeLayout.espacamentoVertical
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let maquina = presenter.maquinas[indexPath.item]
+        let vc = DetalheProdutoModalViewController(produto: maquina)
+        
+        present(vc, animated: true)
+    }
     
 }

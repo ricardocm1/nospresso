@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheProdutoModalViewController" customModule="Nospresso" customModuleProvider="target">
+            <connections>
+                <outlet property="adicionarASacolaButton" destination="MoU-Ww-rh9" id="eV5-Ej-XYL"/>
+                <outlet property="descricaoLabel" destination="Jt2-QE-ypn" id="r4t-ff-OtU"/>
+                <outlet property="fotoImageView" destination="ME5-pG-rJE" id="PGW-eY-vXQ"/>
+                <outlet property="nomeProdutoLabel" destination="038-wa-t1M" id="g2w-1Q-iDz"/>
+                <outlet property="precoLabel" destination="ptU-lu-61S" id="Wnl-2u-oRX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSR-2s-I7f">
+                    <rect key="frame" x="10" y="54" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ubz-dv-T53"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="Button">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="toqueFechar:" destination="-1" eventType="touchUpInside" id="0eA-sY-0Tb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-tv-TSC">
+                    <rect key="frame" x="354" y="54" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="IZx-8r-3DL"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="Button">
+                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                    </state>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IZg-fk-mNI">
+                    <rect key="frame" x="20" y="106" width="374" height="333.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-pG-rJE">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="225"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="225" id="YJU-lN-jk0"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Nome do produto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="038-wa-t1M">
+                            <rect key="frame" x="0.0" y="235" width="374" height="30.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptU-lu-61S">
+                            <rect key="frame" x="0.0" y="275.5" width="374" height="28"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Descrição" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt2-QE-ypn">
+                            <rect key="frame" x="0.0" y="313.5" width="374" height="20"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoU-Ww-rh9">
+                    <rect key="frame" x="60" y="781" width="294" height="41"/>
+                    <color key="backgroundColor" name="Verde Botao"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
+                    <state key="normal" title="Adicionar à sacola">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MoU-Ww-rh9" secondAttribute="bottom" constant="40" id="4Gl-eh-yI1"/>
+                <constraint firstItem="M2b-tv-TSC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="DSn-uL-SZm"/>
+                <constraint firstItem="IZg-fk-mNI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Fcv-TQ-TO6"/>
+                <constraint firstItem="IZg-fk-mNI" firstAttribute="top" secondItem="LSR-2s-I7f" secondAttribute="bottom" constant="10" id="KdT-aQ-Bxg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MoU-Ww-rh9" secondAttribute="trailing" constant="60" id="TA4-cS-ERk"/>
+                <constraint firstItem="MoU-Ww-rh9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IZg-fk-mNI" secondAttribute="bottom" constant="10" id="WQh-jG-ZHE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IZg-fk-mNI" secondAttribute="trailing" constant="20" id="hIU-F3-cD6"/>
+                <constraint firstItem="LSR-2s-I7f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="hZd-0l-N1c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M2b-tv-TSC" secondAttribute="trailing" constant="10" id="mLI-Xu-fx4"/>
+                <constraint firstItem="LSR-2s-I7f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="qlR-xI-2zk"/>
+                <constraint firstItem="MoU-Ww-rh9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="rjF-df-msd"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="Verde Botao">
+            <color red="0.4779999852180481" green="0.69800001382827759" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

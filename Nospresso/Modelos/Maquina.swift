@@ -7,7 +7,9 @@
 
 import Foundation
 
-public struct Maquina: Decodable, CustomStringConvertible {
+public struct Maquina: Produto, CustomStringConvertible {
+    var tipo: TipoProduto { .maquina }
+    
     public var description: String { nome }
     
     let id: Int

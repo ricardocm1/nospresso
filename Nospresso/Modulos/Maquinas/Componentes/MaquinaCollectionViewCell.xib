@@ -49,6 +49,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="Fundo Cinza"/>
             <constraints>
                 <constraint firstItem="DPn-Ir-eXy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="AKh-6s-Fy8"/>
                 <constraint firstItem="jYG-VV-xBG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lnS-7x-g54" secondAttribute="trailing" constant="4" id="GdZ-Ix-AcJ"/>
@@ -72,6 +73,9 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="maquina-inicio" width="120" height="146"/>
+        <namedColor name="Fundo Cinza">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="VerdeDinheiro">
             <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

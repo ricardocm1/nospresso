@@ -7,14 +7,11 @@
 
 import Foundation
 
-protocol MaquinasViewType {
-    
+protocol MaquinasViewType: CarregamentoViewType {
     func recarregarColecao()
-    
 }
 
 protocol MaquinasPresenterType {
-    
     func telaCarregou()
-    
+    var maquinas: [Maquina] { get }
 }
